@@ -109,14 +109,14 @@
     "href": "project.html",
     "title": "DANL Project",
     "section": "",
-    "text": "About this project 👏\n\n1 + 1\n\n[1] 2"
+    "text": "About this project 👏\n\nathletes &lt;- read_csv('/Users/meghancatania/Downloads/Most_paid_athletes.csv')\nathletes &lt;- read_csv('/Users/meghancatania/Downloads/Most_paid_athletes.csv')"
   },
   {
     "objectID": "project.html#summary-statistics",
     "href": "project.html#summary-statistics",
     "title": "DANL Project",
     "section": "2.1 Summary Statistics",
-    "text": "2.1 Summary Statistics\n\nmpg <- ggplot2::mpg\n\n\n\n\n  \n\n\n\nskim(mpg) %>% \n  select(-n_missing)\n\n\nData summary\n\n\nName\nmpg\n\n\nNumber of rows\n234\n\n\nNumber of columns\n11\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n6\n\n\nnumeric\n5\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\nskim_variable\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nmanufacturer\n1\n4\n10\n0\n15\n0\n\n\nmodel\n1\n2\n22\n0\n38\n0\n\n\ntrans\n1\n8\n10\n0\n10\n0\n\n\ndrv\n1\n1\n1\n0\n3\n0\n\n\nfl\n1\n1\n1\n0\n5\n0\n\n\nclass\n1\n3\n10\n0\n7\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\ndispl\n1\n3.47\n1.29\n1.6\n2.4\n3.3\n4.6\n7\n▇▆▆▃▁\n\n\nyear\n1\n2003.50\n4.51\n1999.0\n1999.0\n2003.5\n2008.0\n2008\n▇▁▁▁▇\n\n\ncyl\n1\n5.89\n1.61\n4.0\n4.0\n6.0\n8.0\n8\n▇▁▇▁▇\n\n\ncty\n1\n16.86\n4.26\n9.0\n14.0\n17.0\n19.0\n35\n▆▇▃▁▁\n\n\nhwy\n1\n23.44\n5.95\n12.0\n18.0\n24.0\n27.0\n44\n▅▅▇▁▁"
+    "text": "2.1 Summary Statistics\n\n\n\n  \n\n\n\nskim(athletes) %&gt;% \n  select(-n_missing)\n\n\nData summary\n\n\nName\nathletes\n\n\nNumber of rows\n301\n\n\nNumber of columns\n8\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n4\n\n\nnumeric\n4\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nName\n1.00\n6\n23\n0\n82\n0\n\n\nNationality\n1.00\n2\n16\n0\n22\n0\n\n\nPrevious Year Rank\n0.92\n1\n10\n0\n36\n0\n\n\nSport\n1.00\n3\n28\n0\n29\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nS.NO\n1\n151.00\n87.04\n1.0\n76\n151\n226.0\n301\n▇▇▇▇▇\n\n\nCurrent Rank\n1\n5.45\n2.85\n1.0\n3\n5\n8.0\n10\n▇▇▇▇▇\n\n\nYear\n1\n2005.12\n9.06\n1990.0\n1997\n2005\n2013.0\n2020\n▇▆▇▇▇\n\n\nearnings ($ million)\n1\n45.52\n33.53\n8.1\n24\n39\n59.4\n300\n▇▂▁▁▁"
   },
   {
     "objectID": "project.html#mpg-and-a-type-of-cars",
