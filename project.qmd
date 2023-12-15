@@ -80,7 +80,7 @@ skim(athletes) %>%
 
 
 ## MPG and a Type of Cars
-The following boxplot shows how the distribution of highway MPG (`hwy`) varies by a type of cars (`class`) :blue_car: :truck: :minibus:.
+The following graph shows how the distribution of salary of athletes ('earnings ($ millions)') varies by a type of sport (`sport`) :football:.
 
 
 ```{r}
