@@ -28,10 +28,6 @@ library(tidyverse)
 library(skimr)
 library(ggthemes)
 library(hrbrthemes)
-install.packages("dplyr")
-library(dplyr)
-install.packages("ggplot2")
-library(ggplot2)
 
 theme_set(theme_ipsum()+
           theme(strip.background =element_rect(fill="lightgray"),
@@ -89,16 +85,14 @@ The following graph shows how the distribution of salary of athletes ('earnings 
 
 ```{r}
 sport_earning <- athletes %>%
-  select(Sport,`Current Rank`)
+  select(Sport,`earnings ($ million)`)
 top_sport <- sport_earning %>%
   group_by(variable.names('American Football',Soccer,Basktetball,Golf))
 sport_graph <- top_sport %>%
  filter(Sport %in% c('American Football','Soccer','Basketball','Golf'))
 
 ggplot(sport_graph) +
-  geom_point(aes(x = Sport, y = 'Current Rank'), alpha=.9) +
-  scale_y_discrete(labels= c("label1","label2")) +
-  labs(x = "Sport", y = "Current Rank") 
+  geom_boxplot(aes(x = 'earnings($ millions)', y = Sport)) 
 ```
 
 
